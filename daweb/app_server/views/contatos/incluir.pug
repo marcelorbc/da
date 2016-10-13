@@ -1,0 +1,27 @@
+extends ../layoutFull
+
+block page-wrapper
+	p Incluir novo contato
+	.row
+		form.form-horizontal(role="form")
+			.form-group
+				label.control-label.col-sm-2(for="nome") Nome: 
+				.col-sm-10
+					input#nome.form-control(type="text",placeholder="Digite o nome do contato aqui")
+			.form-group
+				label.control-label.col-sm-2(for="telefone") Telefone: 
+				.col-sm-10
+					input#telefone.form-control(type="text",placeholder="Digite o telefone do contato aqui")
+	.row(style="text-align:right")
+		input.btn.btn-primary(type="button", value="Salvar",onclick="incluir()")
+block script
+	script.
+		
+		function incluir(){
+			digitalAgris.incluirContato({
+				nome: $("#nome").val(),
+				telefones: [$("#telefone").val()]
+			}, function(data){
+				window.location = "/contatos";
+			})
+		}

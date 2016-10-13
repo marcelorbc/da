@@ -1,0 +1,94 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Mean",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/meanjs/server.js",
+            "stopOnEntry": false,
+            "args": ["--debug"],
+            "cwd": "${workspaceRoot}/meanjs",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
+            "name": "daapp",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/daapp/node_modules/nodemon/bin/nodemon.js",
+            "stopOnEntry": false,
+            "args": ["${workspaceRoot}/daapp/server.js","--debug"],
+            "cwd": "${workspaceRoot}/daapp",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": false,
+            "outDir": null
+        }, 
+        {
+            "name": "daapp node",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/daapp/server.js",
+            "stopOnEntry": false,
+            "args": ["--debug"],
+            "cwd": "${workspaceRoot}/daapp",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": false,
+            "outDir": null
+        },
+         {
+            "name": "daweb node",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/daweb/bin/www",
+            "stopOnEntry": false,
+            "args": ["--debug"],
+            "cwd": "${workspaceRoot}/daweb",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
+            "name": "Attach to Process",
+            "type": "node",
+            "request": "attach",
+            "processId": "${command.PickProcess}",
+            "port": 5858,
+            "sourceMaps": false,
+            "outDir": null
+        }
+    ]
+}

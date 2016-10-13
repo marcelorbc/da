@@ -1,0 +1,79 @@
+html
+  head
+    title Digital Agris
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //if lte IE 8
+      script(src='/public/assets/js/ie/html5shiv.js')
+    link(rel='stylesheet', href='/public/assets/css/main.css')
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    //if lte IE 8
+      link(rel='stylesheet', href='/public/assets/css/ie8.css')
+    //if lte IE 9
+      link(rel='stylesheet', href='/public/assets/css/ie9.css')
+  body
+    #page-wrapper
+      // Header
+      #header
+        // Logo
+        h1
+          a#logo(href='index.html') Digital 
+            em Agris
+        // Nav
+        nav#nav
+          ul
+            li.current
+              a(href='index.html') Principal
+            li
+              a(href='#') Funcionalidades
+              ul
+                li
+                  a(href='#') Lorem dolor
+                li
+                  a(href='#') Magna phasellus
+                li
+                  a(href='#') Etiam sed tempus
+                li
+                  a(href='#') Submenu
+                  ul
+                    li
+                      a(href='#') Lorem dolor
+                    li
+                      a(href='#') Phasellus magna
+                    li
+                      a(href='#') Magna phasellus
+                    li
+                      a(href='#') Etiam nisl
+                    li
+                      a(href='#') Veroeros feugiat
+                li
+                  a(href='#') Veroeros feugiat
+            li
+              a(href='left-sidebar.html') Left Sidebar
+            li
+              a(href='right-sidebar.html') Right Sidebar
+            li
+              a(href='two-sidebar.html') Two Sidebar
+            li
+              a(href='/conta/criar') Criar conta
+     
+      block content  
+        
+      // CTA
+      section#cta.wrapper.style3
+        .container
+          header
+            h2 Está pronto para ser um Fazendeiro moderno?
+            a.button(href='#') Sim, estou!!!!
+  
+  
+    // Scripts
+    script(src='bower_components/bootstrap/dist/js/bootstrap.js')
+    script(src='public/assets/js/jquery.min.js')
+    script(src='public/assets/js/jquery.dropotron.min.js')
+    script(src='public/assets/js/skel.min.js')
+    script(src='public/assets/js/util.js')
+    //if lte IE 8
+      script(src='public/assets/js/ie/respond.min.js')
+    script(src='public/assets/js/main.js')
+    bower_components/dist/

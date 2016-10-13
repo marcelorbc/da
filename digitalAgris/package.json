@@ -1,0 +1,34 @@
+{
+  "name": "digitalAgris",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "prestart": "apidoc -i app_api -o apidoc/",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "bootpag": "^1.0.7",
+    "bower": "^1.7.9",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "digitalagrisclient": "0.0.2",
+    "express": "^4.13.4",
+    "mongoose": "^4.5.8",
+    "mongoose-paginate": "^5.0.0",
+    "morgan": "~1.7.0",
+    "pug": "^2.0.0-beta6",
+    "readline": "^1.3.0",
+    "serve-favicon": "~2.3.0",
+    "whatsapp-node": "^1.0.0"
+  },
+  "apidoc": {
+    "name": "Digital Agris API",
+    "version": "0.0.1",
+    "description": "Integração completa",
+    "apidoc": {
+      "title": "Digital Agris API",
+      "url": "https://localhost:3000/apidocs"
+    }
+  }
+}
