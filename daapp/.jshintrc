@@ -1,0 +1,29 @@
+{
+  "globalstrict": true,
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "noempty": true,
+  "noarg": true,
+  "quotmark": "single",
+  "undef": true,
+  "unused": true,
+  "eqnull": true,
+  "freeze": true,
+  "indent": 2,
+  "newcap": true,
+  "latedef": false,
+  "trailing": true,
+  "esversion": 6,
+  "globals": {
+    "angular": true,
+    "__dirname":true,
+    "module": true,
+    "require": true,
+    "console": true,
+    "process": true,
+    "crop": true,
+    "CropHost": true,
+    "PubSub": true
+  }
+}
